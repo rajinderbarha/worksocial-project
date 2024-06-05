@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * test service
+ * homepage service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::test.test');
+module.exports = createCoreService('api::homepage.homepage');

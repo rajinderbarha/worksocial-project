@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "tests",
+  "collectionName": "homepages",
   "info": {
-    "singularName": "test",
-    "pluralName": "tests",
-    "displayName": "test"
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
   },
   "options": {
     "draftAndPublish": true
@@ -12,9 +12,6 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
-    },
-    "heading": {
       "type": "string"
     }
   }

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_homepage_hero_block_with_schedule_a_tours",
+  "info": {
+    "displayName": "Hero block with schedule a tour"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
