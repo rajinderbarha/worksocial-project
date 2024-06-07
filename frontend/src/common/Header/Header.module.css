@@ -1,0 +1,31 @@
+.manu_items li a{
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+text-decoration: none;
+color: #281D18;
+display: flex;
+gap: 8px;
+}
+.manu_items li a img{
+    max-width: 16px;
+}
+.manu_items{
+    gap: 50px ;
+    align-items: center;
+}
+.Nav_button{
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+padding: 28px 35px;
+background: #FF5B00;
+border: none;
+color: #fff;
+border-radius: 20px;
+}
+@media only screen and (max-width: 768px) {
+.Navbar img{
+max-width: 138px;
+height: 73px;
+}}

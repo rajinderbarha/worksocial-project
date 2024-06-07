@@ -1,12 +1,30 @@
 {
   "collectionName": "components_homepage_hero_block_with_schedule_a_tours",
   "info": {
-    "displayName": "Hero block with schedule a tour"
+    "displayName": "Hero block with schedule a tour",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "HeroSectionBgImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Banner": {
+      "displayName": "Banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.banner"
     }
   }
 }

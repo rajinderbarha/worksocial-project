@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@strapi/blocks-react-renderer": "^1.0.1",
+    "bootstrap": "^5.3.3",
     "intersection-observer": "^0.12.2",
     "next": "14.2.3",
     "qs": "^6.12.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^5.2.1"
   },
   "devDependencies": {
     "@types/node": "^20",

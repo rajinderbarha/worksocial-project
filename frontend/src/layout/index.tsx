@@ -1,7 +1,10 @@
 
 import React from 'react'
-import Header from '@/common/Header'
+// import Header from '@/common/Header'
+
 import Footer from '@/common/Footer'
+import Header from '@/common/Header'
+
 
 const Layout = ({children, headerData,footerData}:{children:React.ReactNode,headerData:any,footerData:any} ) => {
   
@@ -15,3 +18,6 @@ const Layout = ({children, headerData,footerData}:{children:React.ReactNode,head
 }
 
 export default Layout
+
+
+

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_homepage_all_amenities",
+  "info": {
+    "displayName": "All Amenities"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

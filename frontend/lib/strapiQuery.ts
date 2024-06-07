@@ -76,23 +76,22 @@ export async function getHomePageData() {
 
           spaces: {
             populate: {
-              image:{
-              fields:["url","alternativeText"]
+              image: {
+                fields: ["url", "alternativeText"],
               },
-              ameneties:{
-              populate:{
-              amenetyIcon :{
-               fields:["url","alternativeText"]
-              },
-              }
-              },
-              
-              bookitBtn:{
-              populate:true
-              },
-              
-            },
+              ameneties: {
+                populate: {
+                  amenetyIcon: {
+                    fields: ["url", "alternativeText"],
                   },
+                },
+              },
+
+              bookitBtn: {
+                populate: true,
+              },
+            },
+          },
 
           bookbtn: {
             populate: {
@@ -124,7 +123,7 @@ export async function getHomePageData() {
             },
           },
           image: {
-            fields: ["url","alternativeText"],
+            fields: ["url", "alternativeText"],
           },
         },
 
@@ -145,61 +144,34 @@ export async function getHomePageData() {
   return await fetchData(url.href);
 }
 
-export async function getNavigationData() {
-  const url = new URL("/api/navigation", baseUrl);
+export async function getHeaderData() {
+  const url = new URL("/api/header", baseUrl);
 
-  // url.search = qs.stringify({
-  //   populate: {
-  //     block: {
-  //       populate: {
-  //         Links: {
-  //           populate: true,
-  //         },
-
-  //         logo: {
-  //           fields: ["url", "alternativeText"],
-  //         },
-  //         searchIcon: {
-  //           fields: ["url", "alternativeText"],
-  //         },
-  //       },
-  //     },
-  //   },
-  // });
-  url.search = qs.stringify({
-    populate: {
-      block: {
-        populate: {
-          Links: {
-            populate: true,
-          },
-
-          logo: {
-            fields: ["url", "alternativeText"],
-          },
-          
-          states:{
-          populate:true
-          },
-          
-          searchIcon: {
-            fields: ["url", "alternativeText"],
-          },
-          
-           Locations:{
-        populate:{
-        states:{
-        populate:true
-        }
-        }
-        }
-        },
-        
-       
-        
-      },
-    },
-  });
+  url.search = qs.stringify(
+    {
+       populate: {
+         blocks: {
+           populate: {
+             NavbarLogo: {
+               fields: ["url", "alternativeText"],
+             },
+   
+             NavLinks : {
+               populate: {
+                 icon: {
+                   fields: ["url", "alternativeText"],
+                 },
+               },
+             },
+   
+             ScheduleBtn: {
+               populate: true,
+             },
+           },
+         },
+       },
+     }
+   );
 
   return await fetchData(url.href);
 }
@@ -208,116 +180,106 @@ export async function getFooterData() {
   const url = new URL("/api/footer", baseUrl);
 
   url.search = qs.stringify({
-    populate: {
-      block: {
-        populate: {
-          logo: {
-            fields: ["url", "alternativeText"],
-                },
-          FooterComponent :{
-            populate:{
-              links:{
-              populate:true
-                      }
-                    },
-                          },
-                  },
-             },
-       socialIcons:{
-         populate:{
-         socialIconLinks:{
-         populate:{
-           Image:{
-           fields:["url","alternativeText"]
-           }
-         }
-         }
-         }
+    populate:{
+    block:{
+      populate:{
+      FooterLogo:{
+      fields:["url","alternativeText"]
+      },
+      FooterList:{
+      populate:{
+        links:{
+        populate:true
+        }
+        }
+      },
        },
+      },
+      
+      otherpages:{
+      populate:true
+      },
        
-       links :{
-       populate:true
-       }
-              },
-  });
+      socialIcons:{
+        populate:{
+        icon:{
+         fields:["url","alternativeText"]
+        }
+        }
+      },
+      
+      services:{
+        populate:true
+      },
+      
+   
+    
+    }
+   });
 
   return await fetchData(url.href);
 }
-
 
 export async function getLocationData() {
   const url = new URL("/api/states", baseUrl);
 
   url.search = qs.stringify({
     populate: {
-    cities: {
-    populate: {
-    space: {
-    populate: {
-      image:{
-      fields:["url","alternativeText"]
-      },
-      ameneties:{
-      populate:{
-      amenetyIcon :{
-       fields:["url","alternativeText"]
-      },
-      }
-      },
-      
-      bookitBtn:{
-      populate:true
-      },
+      cities: {
+        populate: {
+          space: {
+            populate: {
+              image: {
+                fields: ["url", "alternativeText"],
+              },
+              ameneties: {
+                populate: {
+                  amenetyIcon: {
+                    fields: ["url", "alternativeText"],
+                  },
+                },
+              },
 
-      SpaceLocation:{
-        populate:true
-      }
-      
-    },
+              bookitBtn: {
+                populate: true,
+              },
+
+              SpaceLocation: {
+                populate: true,
+              },
+            },
           },
-    block: {
-    populate: {
-    Slidersec : {
-    populate: {
-    sliderimg: {
-     fields: [
-                      "url",
-                      "alternativeText"
-                    ]
-                  }
-                }
+          block: {
+            populate: {
+              Slidersec: {
+                populate: {
+                  sliderimg: {
+                    fields: ["url", "alternativeText"],
+                  },
+                },
               },
-    Varietyroomcard : {
-    populate: {
-    image: {
-    fields: [
-                      "url",
-                      "alternativeText"
-                    ]
-                  }
-                }
+              Varietyroomcard: {
+                populate: {
+                  image: {
+                    fields: ["url", "alternativeText"],
+                  },
+                },
               },
-    image: {
-    fields: [
-                  "url",
-                  "alternativeText"
-                ]
+              image: {
+                fields: ["url", "alternativeText"],
               },
-    CompanyFacilitiesCard : {
-    populate: {
-    image: {
-    fields: [
-                      "url",
-                      "alternativeText"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+              CompanyFacilitiesCard: {
+                populate: {
+                  image: {
+                    fields: ["url", "alternativeText"],
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
   });
 
   return await fetchData(url.href);
@@ -327,40 +289,34 @@ export async function getSpaceData() {
   const url = new URL("/api/offices", baseUrl);
 
   url.search = qs.stringify({
-  
     populate: {
-      image:{
-      fields:["url","alternativeText"]
+      image: {
+        fields: ["url", "alternativeText"],
       },
-      ameneties:{
-      populate:{
-      amenetyIcon :{
-       fields:["url","alternativeText"]
-      },
-      }
-      },
-      
-      bookitBtn:{
-      populate:true
+      ameneties: {
+        populate: {
+          amenetyIcon: {
+            fields: ["url", "alternativeText"],
+          },
+        },
       },
 
-      SpaceLocation:{
-        populate:true
+      bookitBtn: {
+        populate: true,
       },
-      
-      city:{
-      populate:true
-      }
-      
+
+      SpaceLocation: {
+        populate: true,
+      },
+
+      city: {
+        populate: true,
+      },
     },
-          }
-    
-       );
+  });
 
   return await fetchData(url.href);
 }
-
-
 
 // export async function getGlobalPageData(){      // header  and footer
 
