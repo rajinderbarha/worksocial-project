@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_global_footers",
+  "info": {
+    "displayName": "Footer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "FooterLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "FooterList": {
+      "displayName": "LinksList",
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.links-list"
+    }
+  }
+}

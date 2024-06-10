@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_view_spaces_banners",
+  "info": {
+    "displayName": "View spaces banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.card"
+    }
+  }
+}

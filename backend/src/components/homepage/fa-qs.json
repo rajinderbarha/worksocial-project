@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_homepage_fa_qs",
+  "info": {
+    "displayName": "FAQs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

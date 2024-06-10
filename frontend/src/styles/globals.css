@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  background-color: #EAE6DE !important;
+  
+}
+.Containers_main {
+  width: 100%;
+  max-width: 1760px;
+  margin: 0 auto;
+}
+
+.Containers_x {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.Home h1 {
+  font-size: 84px;
+  font-weight: 400;
+  line-height: 78px;
+  letter-spacing: -0.02em;
+}
+
+.Home h2 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+}
+
+
+.Home h5{
+font-size: 28px;
+font-weight: 500;
+line-height: 29px;
+}
+
+.sub_heading{
+font-size: 24px;
+font-weight: 400;
+line-height: 78px;
+letter-spacing: -0.02em;
+}
+.Home p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+
+.pink{
+  background-color: #F2BDEB;
+}
+
+.button_1{
+  padding: 10px 6px 10px 30px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.orange{
+  background-color: #FF5B00;
+}
+.btn_icon{
+  border-radius: 20px;
+  color: #281D18;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+.dark_brown{
+  background: #281D18;
+}
+@media only screen and (max-width: 991px) {
+  .Home h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .sub_heading{
+    font-size: 18px;
+    line-height: 30px;
+    }
+    .Home p {
+      font-size: 18px;
+    }
+    .button_1 {
+      font-size: 18px;
+    }
+    .btn_icon{
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+    }
+}
+@media only screen and (max-width:768px) {
+  .sub_heading{
+    font-size: 14px;
+    line-height: 11px;
+    }
+    .Home h1 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    .Home p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .Home h5{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 29px;
+      }
+      .Home h2 {
+        font-size: 28px;
+        line-height: 34px;
+      }
+      .slick-track {
+        left: -37px !important;}
+}
