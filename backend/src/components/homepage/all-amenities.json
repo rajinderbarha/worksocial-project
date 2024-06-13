@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_all_amenities",
+  "info": {
+    "displayName": "All Amenities",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "ammenities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ammenity.ammenity"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

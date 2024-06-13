@@ -1,0 +1,301 @@
+
+//////////// GET HEADER DATA //////////////
+
+// {
+//     populate: {
+//       blocks: {
+//         populate: {
+//           NavbarLogo: {
+//             fields: ["url", "alternativeText"],
+//           },
+
+//           NavLinks : {
+//             populate: {
+//               icon: {
+//                 fields: ["url", "alternativeText"],
+//               },
+//             },
+//           },
+
+//           ScheduleBtn: {
+//             populate: true,
+//           },
+//         },
+//       },
+//     },
+//   }
+
+
+
+
+/////////// GET FOOTER DATA //////////////
+
+// {
+//     populate:{
+//     block:{
+//       populate:{
+//       FooterLogo:{
+//       fields:["url","alternativeText"]
+//       },
+//       FooterList:{
+//       populate:{
+//         links:{
+//         populate:true
+//         }
+//         }
+//       },
+//        },
+//       },
+
+//       otherpages:{
+//       populate:true
+//       },
+
+//       socialIcons:{
+//         populate:{
+//         icon:{
+//          fields:["url","alternativeText"]
+//         }
+//         }
+//       },
+
+//       services:{
+//         populate:true
+//       },
+
+
+
+//     }
+//    }
+
+//////////////////////////////////////////////
+
+
+
+
+
+////////////// GET HOMEPAGE DATA //////////////
+
+// {
+//     populate:{
+//      block: {
+//       populate:{
+//         HeroSectionBgImg:{
+//           fields: ["url","alternativeText"]
+//         },
+//         Banner:{
+//           populate:{
+//             BannerBtn:{
+//               populate: true
+//             }
+//           }
+//         },
+//         services:{
+//           populate:{
+//            Icon:{
+//              fields: ["url","alternativeText"]
+//             },
+//           }
+//         },
+//         AvailableLocations:{
+//          populate:{
+//            CoverImg:{
+//              fields: ["url","alternativeText"]
+//             },
+//          }
+//         },
+//         workspace_preferences:{
+//           populate:{
+//             CoverImage:{
+//              fields: ["url","alternativeText"]
+//             },
+//           }
+//         },
+//         ammenities:{
+//           populate:{
+//             Icon:{
+//              fields: ["url","alternativeText"]
+//             },
+//           }
+//         },
+//         FindPerfectSpaceCard:{
+//           populate:{
+//             ScheduleTourLink:{
+//               populate:true
+//              },
+//              FindPerfectSpaceCardIcon:{
+//               fields: ["url","alternativeText"]
+//              }
+//           }
+//         },
+//         brand_collaborations: {
+//           populate:{
+//             BrandLogo:{
+//               fields: ["url","alternativeText"]
+//              }
+//           }
+//         },
+//         testimonials :{
+//           populate:{
+//             ReviewersImgae:{
+//               fields: ["url","alternativeText"]
+//             }
+//           }
+//         },
+//         BlogSectionBtn:{
+//           populate: true
+//         },
+//         blogs :{
+//           populate:{
+//             CoverImage:{
+//               fields: ["url","alternativeText"]
+//             }
+//           }
+//         },
+//         BGImage:{
+//           fields: ["url","alternativeText"]
+//         },
+//         faqs:{
+//           populate: true
+//         }
+//       }
+//      }
+//     }
+//   }
+
+
+//////////////////////////////////////////////////
+
+
+
+
+
+
+//////////  Get All Locations Page Data  //////////
+// {
+// populate:{
+//   block:{
+//    populate:{
+//     BannerBtn:{
+//      populate: true 
+//    },
+//    coverImg:{
+//     fields:["url","alternativeText"]
+//    },
+//    spaces:{
+//     populate:{
+//        SpacePreviewImages:{
+//          fields:["url","alternativeText"]
+//        }
+//      }
+//    },
+//    AvailableLocations:{
+//      populate:{
+//        CoverImg:{
+//          fields:["url","alternativeText"]
+//        }
+//      }
+//    },
+//    services :{
+//      populate:{
+//        Icon:{
+//           fields:["url","alternativeText"]
+//        }
+//      }
+//    },
+//    ammenities :{
+//      populate:{
+//        Icon:{
+//           fields:["url","alternativeText"]
+//        }
+//      }
+//    },
+//    WorkSocialImages :{
+//      fields:["url","alternativeText"]
+//    },
+//    JoinInFormSectionCoverImg:{
+//      fields:["url","alternativeText"]
+//    },
+//    faqs:{
+//      populate:true
+//    }
+//    }
+//   }
+// }
+// }
+//////////////////////////////////////
+
+
+
+/////////// ALL SERVICES PAGE /////////////////
+
+
+// {
+//     populate: {
+//         block: {
+//             populate: {
+//                 BannerBtn: {
+//                     populate: true
+//                 },
+//                 coverImg: {
+//                     fields: ["url", "alternativeText"]
+//                 },
+//                 spaces: {
+//                     populate: {
+//                         SpacePreviewImages: {
+//                             fields: ["url", "alternativeText"]
+//                         }
+//                     }
+//                 },
+//                 services: {
+//                     populate: {
+//                         Icon: {
+//                             fields: ["url", "alternativeText"]
+//                         }
+//                     }
+//                 },
+//                 ammenities: {
+//                     populate: {
+//                         Icon: {
+//                             fields: ["url", "alternativeText"]
+//                         }
+//                     }
+//                 },
+//                 SimpleCardComponent: {
+//                     populate: {
+//                         icon: {
+//                             fields: ["url", "alternativeText"]
+//                         }
+//                     }
+//                 },
+//                 WorkSocialImages: {
+//                     fields: ["url", "alternativeText"]
+//                 },
+//                 FindPerfectSpaceCard: {
+//                     ScheduleTourLink: {
+//                         populate: true
+//                     },
+//                     FindPerfectSpaceCardIcon: {
+//                         fields: ["url", "alternativeText"]
+//                     }
+//                 },
+//                 JoinInFormSectionCoverImg: {
+//                     fields: ["url", "alternativeText"]
+//                 },
+//                 faqs: {
+//                     populate: true
+//                 }
+
+
+
+
+
+
+
+
+//             }
+//         }
+//     }
+// }
+/////////////////////////////////////////////
+

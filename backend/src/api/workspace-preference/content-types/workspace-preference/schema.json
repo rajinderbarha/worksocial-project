@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workspace_preferences",
+  "info": {
+    "singularName": "workspace-preference",
+    "pluralName": "workspace-preferences",
+    "displayName": "WorkspacePreference"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Type": {
+      "type": "string"
+    },
+    "Size": {
+      "type": "string"
+    },
+    "CoverImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_all_locations_work_at_work_socials",
+  "info": {
+    "displayName": "work at workSocial",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "WorkSocialImages": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

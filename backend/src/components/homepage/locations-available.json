@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_locations_availables",
+  "info": {
+    "displayName": "Locations Available",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "AvailableLocations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location"
+    }
+  }
+}

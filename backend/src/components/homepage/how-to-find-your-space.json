@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_homepage_how_to_find_your_spaces",
+  "info": {
+    "displayName": "How to Find Your  Space"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

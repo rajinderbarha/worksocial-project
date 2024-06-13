@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_homepage_section_with_contact_us_todays",
+  "info": {
+    "displayName": "Section With Contact us today"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "BGImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

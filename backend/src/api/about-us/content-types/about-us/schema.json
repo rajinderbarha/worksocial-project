@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "About Us",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "block": {
+      "type": "dynamiczone",
+      "components": [
+        "about-us.hero-banner-section",
+        "about-us.our-story-section-one",
+        "about-us.our-story-section-two",
+        "utils.banner",
+        "global.card",
+        "about-us.our-process",
+        "about-us.join-work-social-banner-component",
+        "about-us.work-social-team",
+        "about-us.work-life-insights"
+      ]
+    }
+  }
+}

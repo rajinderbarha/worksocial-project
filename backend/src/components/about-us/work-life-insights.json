@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_us_work_life_insights",
+  "info": {
+    "displayName": "Work-Life Insights"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "ReadAllBlogBtn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.links"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    }
+  }
+}

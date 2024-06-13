@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_home_to_leading_brands",
+  "info": {
+    "displayName": "Home to leading Brands",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "brand_collaborations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::brand-collaboration.brand-collaboration"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "block": {
+      "type": "dynamiczone",
+      "components": [
+        "homepage.hero-block-with-schedule-a-tour",
+        "homepage.our-services",
+        "homepage.locations-available",
+        "homepage.spaces-for-every-scale",
+        "homepage.view-spaces-banner",
+        "homepage.all-amenities",
+        "homepage.nearby-locations",
+        "homepage.how-to-find-your-space",
+        "homepage.testimonials",
+        "homepage.blogs",
+        "homepage.fa-qs",
+        "homepage.section-with-contact-us-today",
+        "homepage.home-to-leading-brands"
+      ]
+    }
+  }
+}

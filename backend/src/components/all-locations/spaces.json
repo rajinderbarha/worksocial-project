@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_all_locations_spaces",
+  "info": {
+    "displayName": "Spaces"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "spaces": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::space.space"
+    }
+  }
+}

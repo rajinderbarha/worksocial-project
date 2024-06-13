@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "work_social_teams",
+  "info": {
+    "singularName": "work-social-team",
+    "pluralName": "work-social-teams",
+    "displayName": "WorkSocial Team",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "about": {
+      "type": "text"
+    },
+    "ProfileImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

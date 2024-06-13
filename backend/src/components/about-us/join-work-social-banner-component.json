@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_about_us_join_work_social_banner_components",
+  "info": {
+    "displayName": "Join WorkSocial Banner Component",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "CoverImg": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "linkBtn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.links"
+    }
+  }
+}

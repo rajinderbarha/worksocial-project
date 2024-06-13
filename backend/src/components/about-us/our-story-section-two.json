@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_about_us_our_story_section_twos",
+  "info": {
+    "displayName": "Our Story Section Two"
+  },
+  "options": {},
+  "attributes": {
+    "StoryTwo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.simple-card"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_all_locations_join_in_form_sections",
+  "info": {
+    "displayName": "Join in Form Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "JoinInFormSectionCoverImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

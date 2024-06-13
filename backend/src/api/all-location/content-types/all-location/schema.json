@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "all_locations",
+  "info": {
+    "singularName": "all-location",
+    "pluralName": "all-locations",
+    "displayName": "All Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "block": {
+      "type": "dynamiczone",
+      "components": [
+        "utils.banner",
+        "homepage.locations-available",
+        "homepage.our-services",
+        "homepage.all-amenities",
+        "all-locations.work-at-work-social",
+        "all-locations.join-in-form-section",
+        "homepage.fa-qs",
+        "all-locations.spaces"
+      ]
+    }
+  }
+}

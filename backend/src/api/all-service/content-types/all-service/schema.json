@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "all_services",
+  "info": {
+    "singularName": "all-service",
+    "pluralName": "all-services",
+    "displayName": "All Service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "block": {
+      "type": "dynamiczone",
+      "components": [
+        "utils.banner",
+        "homepage.our-services",
+        "homepage.all-amenities",
+        "all-locations.work-at-work-social",
+        "all-locations.join-in-form-section",
+        "homepage.fa-qs",
+        "homepage.nearby-locations",
+        "all-services.spaces-that-elevate-your-business"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_collaborations",
+  "info": {
+    "singularName": "brand-collaboration",
+    "pluralName": "brand-collaborations",
+    "displayName": "Brand Collaboration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BrandName": {
+      "type": "string"
+    },
+    "BrandLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

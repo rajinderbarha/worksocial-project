@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_spaces_for_every_scales",
+  "info": {
+    "displayName": "Spaces for every scale",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "workspace_preferences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::workspace-preference.workspace-preference"
+    }
+  }
+}

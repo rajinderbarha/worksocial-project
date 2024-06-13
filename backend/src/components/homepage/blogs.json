@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_homepage_blogs",
+  "info": {
+    "displayName": "Blogs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "BlogSectionBtn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.links"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    }
+  }
+}

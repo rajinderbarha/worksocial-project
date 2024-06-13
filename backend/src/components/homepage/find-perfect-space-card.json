@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_homepage_find_perfect_space_cards",
+  "info": {
+    "displayName": "FindPerfectSpaceCard"
+  },
+  "options": {},
+  "attributes": {
+    "index": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ScheduleTourLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.links"
+    },
+    "FindPerfectSpaceCardIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

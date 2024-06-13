@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_all_services_spaces_that_elevate_your_businesses",
+  "info": {
+    "displayName": "Spaces that elevate your business",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "des": {
+      "type": "text"
+    },
+    "CoverImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "SimpleCardComponent": {
+      "displayName": "Simple Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.simple-card"
+    }
+  }
+}

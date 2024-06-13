@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_about_us_work_social_teams",
+  "info": {
+    "displayName": "WorkSocial Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "work_social_teams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::work-social-team.work-social-team"
+    }
+  }
+}
