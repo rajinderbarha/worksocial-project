@@ -16,9 +16,9 @@
 ssl
 .idea
 nbproject
-public/uploads/*
-!public/uploads/.gitkeep
-!public/uploads/**  # Allow tracking all files in public/uploads
+# public/uploads/*
+# !public/uploads/.gitkeep
+# !public/uploads/**  # Allow tracking all files in public/uploads
 
 ############################
 # Node.js
@@ -42,7 +42,7 @@ coverage
 # Strapi
 ############################
 
-.env
+# .env
 license.txt
 exports
 .strapi
