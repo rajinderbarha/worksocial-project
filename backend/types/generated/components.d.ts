@@ -342,12 +342,12 @@ export interface HomepageOurServices extends Schema.Component {
   };
   attributes: {
     title: Attribute.String;
-    description: Attribute.Text;
     services: Attribute.Relation<
       'homepage.our-services',
       'oneToMany',
       'api::service.service'
     >;
+    heading: Attribute.Blocks;
   };
 }
 

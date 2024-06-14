@@ -1,0 +1,39 @@
+.Brandslogos{
+    padding: 130px 16px;
+}
+
+.Brandslogos h2{
+max-width: 719px;
+}
+.Brandslogos p{
+    max-width: 670px;
+    margin: 40px 0 65px 0 ;
+}
+.Brandslogos_box{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
+@media only screen and (max-width: 1200px) {
+    .Brandslogos_box{
+        grid-template-columns: auto auto auto auto ;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .Brandslogos{
+        padding:0px 16px 129px 16px;
+    }
+    .Brandslogos p{
+        max-width: 670px;
+        margin: 19px 0 29px 0 ;
+    }
+    .Brandslogos_box{
+        grid-template-columns: auto auto;
+    }
+    .Brandslogos img{
+        height: 97px;
+    }
+    .Brandslogos{
+        text-align: center;
+    }
+}

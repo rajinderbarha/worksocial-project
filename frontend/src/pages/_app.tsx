@@ -22,7 +22,7 @@ import type { AppProps } from "next/app";
 import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "@/layout";
-import { getFooterData, getHeaderData } from "../../lib/strapiQuery";
+import { getAboutUsPageData, getAllLocationPageData, getFooterData, getHeaderData, getHomePageData } from "../../lib/strapiQuery";
 
 export default function App({ Component, pageProps, headerData, footerData } : AppProps & {headerData:any,footerData:any} ) {
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function App({ Component, pageProps, headerData, footerData } : A
 }, [])
 
 
-// console.log("++++++++++++++++++++++++++++++++++++++++++++",headerData)
+
 
 
   return<>
@@ -44,5 +44,7 @@ export default function App({ Component, pageProps, headerData, footerData } : A
 App.getInitialProps = async () => {
   const headerData = await getHeaderData()
   const footerData = await getFooterData()
+
+  
   return { headerData,footerData };
 };

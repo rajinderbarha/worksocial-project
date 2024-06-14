@@ -1,0 +1,78 @@
+.perfectspace {
+    padding: 129px 16px 106px 16px;
+}
+
+.perfectspace h2 {
+    max-width: 820px;
+    margin-bottom: 30px;
+}
+
+.perfectspace p {
+    margin-bottom: 53px;
+    max-width: 561px;
+}
+
+.perfectspace .perfectspace_card_text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 23px 0;
+}
+
+.perfectspace_card_text h4 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+.perfectspace_card_text {
+    padding:0 29px;
+    margin-bottom: 99px;
+    max-width:330px;
+}
+
+.perfectspace_card {
+    padding: 19px 25px 19px 25px;
+    border-radius: 30px;
+    background-color: #F6F4F2;
+}
+
+.perfectspace_card h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 42px;
+}
+@media only screen and (max-width:768px) {
+    .perfectspace_card_text {
+        padding: 0;
+        margin-bottom: 38px;
+    }
+    .perfectspace_card h6 {
+        font-size: 16px;
+        line-height: 29px;
+    }
+    .perfectspace_card_text h4 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 23px;
+    }
+    .perfectspace .perfectspace_card_text p {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 8px 0;
+    }
+    .perfectspace_card img{
+        height: 206px;
+    }
+    .perfectspace_card {
+        padding: 20px 13px;
+        border-radius: 30px;
+        background-color: #F6F4F2;
+    }
+    .perfectspace {
+        padding: 60px 16px 111px 16px;
+    }
+    
+    
+}

@@ -1,0 +1,43 @@
+.Business{
+    padding: 100px 16px 110px 16px;
+}
+.Business_content{
+    max-width: 850px;
+    margin-bottom: 84px;
+}
+.business_card{
+    max-width: 429px;
+    padding: 0 10px;
+}
+.business_card_footer{
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+}
+.business_card img{
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .Business{
+        padding: 0px 16px 50px 16px;
+    }
+
+    .business_card{
+        max-width:253px;
+        height: 282px;
+    }
+    .business_card_footer button{
+        font-size: 12px;
+        padding: 2px 2px 2px 17px;
+        border-radius: 10px;
+    }
+    .business_card_footer .business_card_icon{
+    width: 40px;
+    height: 40px;
+    }
+    .Business_content{
+        margin-bottom: 44px;
+    }
+}

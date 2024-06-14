@@ -26,402 +26,328 @@ async function fetchData(url: string) {
   }
 }
 
-// export async function getHomePageData() {
-//   const url = new URL("/api/homepage", baseUrl);
-
-//   url.search = qs.stringify({
-//     populate: {
-//       blocks: {
-//         populate: {
-//           FAQ: {
-//             populate: true,
-//           },
-//           link: {
-//             populate: true,
-//           },
-//           Benifit_Cards: {
-//             populate: {
-//               image: {
-//                 fields: ["url", "alternativeText"],
-//               },
-//             },
-//           },
-
-//           Review_Card: {
-//             populate: {
-//               profileImg: {
-//                 fields: ["url", "alternativeText"],
-//               },
-//             },
-//           },
-
-//           logo: {
-//             populate: {
-//               logo: {
-//                 fields: ["url", "alternativeText"],
-//               },
-//             },
-//           },
-//           CompanyFacilitiesCard: {
-//             populate: {
-//               image: {
-//                 fields: ["url", "alternativeText"],
-//               },
-//             },
-//           },
-
-//           mapviewbtn: {
-//             populate: true,
-//           },
-
-//           spaces: {
-//             populate: {
-//               image: {
-//                 fields: ["url", "alternativeText"],
-//               },
-//               ameneties: {
-//                 populate: {
-//                   amenetyIcon: {
-//                     fields: ["url", "alternativeText"],
-//                   },
-//                 },
-//               },
-
-//               bookitBtn: {
-//                 populate: true,
-//               },
-//             },
-//           },
-
-//           bookbtn: {
-//             populate: {
-//               icon: {
-//                 fields: ["url", "alternativeText"],
-//               },
-//             },
-//           },
-
-//           Slidersec: {
-//             populate: {
-//               sliderimg: {
-//                 fields: ["url"],
-//               },
-//             },
-//           },
-//           button: {
-//             populate: {
-//               icon: {
-//                 fields: ["url"],
-//               },
-//             },
-//           },
-//           Varietyroomcard: {
-//             populate: {
-//               image: {
-//                 fields: ["url"],
-//               },
-//             },
-//           },
-//           image: {
-//             fields: ["url", "alternativeText"],
-//           },
-//         },
-
-//         Links: {
-//           populate: true,
-//         },
-
-//         logo: {
-//           fields: ["url", "alternativeText"],
-//         },
-//         searchIcon: {
-//           fields: ["url", "alternativeText"],
-//         },
-//       },
-//     },
-//   });
-
-//   return await fetchData(url.href);
-// }
-
-//
-//
-//
-//
-//
-export async function getHomePageData() {
-  const url = new URL("/api/homepage", baseUrl);
-
-  url.search = qs.stringify(
-    {
-      populate:{
-       block: {
-        populate:{
-          HeroSectionBgImg:{
-            fields: ["url","alternativeText"]
-          },
-          Banner:{
-            populate:{
-              BannerBtn:{
-                populate: true
-              }
-            }
-          },
-          services:{
-            populate:{
-             Icon:{
-               fields: ["url","alternativeText"]
-              },
-            }
-          },
-          AvailableLocations:{
-           populate:{
-             CoverImg:{
-               fields: ["url","alternativeText"]
-              },
-           }
-          },
-          workspace_preferences:{
-            populate:{
-              CoverImage:{
-               fields: ["url","alternativeText"]
-              },
-            }
-          },
-          ammenities:{
-            populate:{
-              Icon:{
-               fields: ["url","alternativeText"]
-              },
-            }
-          },
-          FindPerfectSpaceCard:{
-            populate:{
-              ScheduleTourLink:{
-                populate:true
-               },
-               FindPerfectSpaceCardIcon:{
-                fields: ["url","alternativeText"]
-               }
-            }
-          },
-          brand_collaborations: {
-            populate:{
-              BrandLogo:{
-                fields: ["url","alternativeText"]
-               }
-            }
-          },
-          testimonials :{
-            populate:{
-              ReviewersImgae:{
-                fields: ["url","alternativeText"]
-              }
-            }
-          },
-          BlogSectionBtn:{
-            populate: true
-          },
-          blogs :{
-            populate:{
-              CoverImage:{
-                fields: ["url","alternativeText"]
-              }
-            }
-          },
-          BGImage:{
-            fields: ["url","alternativeText"]
-          },
-          faqs:{
-            populate: true
-          }
-        }
-       }
-      }
-    }
-   );
-
-  return await fetchData(url.href);
-}
 
 
 
-
-
-
+///////////// HEADER DATA //////////////
 export async function getHeaderData() {
   const url = new URL("/api/header", baseUrl);
 
   url.search = qs.stringify(
     {
-       populate: {
-         blocks: {
-           populate: {
-             NavbarLogo: {
-               fields: ["url", "alternativeText"],
-             },
-   
-             NavLinks : {
-               populate: {
-                 icon: {
-                   fields: ["url", "alternativeText"],
-                 },
-               },
-             },
-   
-             ScheduleBtn: {
-               populate: true,
-             },
-           },
-         },
-       },
-     }
-   );
+      populate: {
+        blocks: {
+          populate: {
+            NavbarLogo: {
+              fields: ["url", "alternativeText"],
+            },
+
+            NavLinks: {
+              populate: {
+                icon: {
+                  fields: ["url", "alternativeText"],
+                },
+              },
+            },
+
+            ScheduleBtn: {
+              populate: true,
+            },
+          },
+        },
+      },
+    }
+  );
 
   return await fetchData(url.href);
 }
 
+
+///////////// FOOTER DATA //////////////
 export async function getFooterData() {
   const url = new URL("/api/footer", baseUrl);
 
   url.search = qs.stringify({
-    populate:{
-    block:{
-      populate:{
-      FooterLogo:{
-      fields:["url","alternativeText"]
+    populate: {
+      block: {
+        populate: {
+          FooterLogo: {
+            fields: ["url", "alternativeText"]
+          },
+          FooterList: {
+            populate: {
+              links: {
+                populate: true
+              }
+            }
+          },
+        },
       },
-      FooterList:{
-      populate:{
-        links:{
-        populate:true
+
+      otherpages: {
+        populate: true
+      },
+
+      socialIcons: {
+        populate: {
+          icon: {
+            fields: ["url", "alternativeText"]
+          }
         }
-        }
       },
-       },
+
+      services: {
+        populate: true
       },
-      
-      otherpages:{
-      populate:true
-      },
-       
-      socialIcons:{
-        populate:{
-        icon:{
-         fields:["url","alternativeText"]
-        }
-        }
-      },
-      
-      services:{
-        populate:true
-      },
-      
-   
-    
+
+
+
     }
-   });
-
-  return await fetchData(url.href);
-}
-
-export async function getLocationData() {
-  const url = new URL("/api/states", baseUrl);
-
-  url.search = qs.stringify({
-    populate: {
-      cities: {
-        populate: {
-          space: {
-            populate: {
-              image: {
-                fields: ["url", "alternativeText"],
-              },
-              ameneties: {
-                populate: {
-                  amenetyIcon: {
-                    fields: ["url", "alternativeText"],
-                  },
-                },
-              },
-
-              bookitBtn: {
-                populate: true,
-              },
-
-              SpaceLocation: {
-                populate: true,
-              },
-            },
-          },
-          block: {
-            populate: {
-              Slidersec: {
-                populate: {
-                  sliderimg: {
-                    fields: ["url", "alternativeText"],
-                  },
-                },
-              },
-              Varietyroomcard: {
-                populate: {
-                  image: {
-                    fields: ["url", "alternativeText"],
-                  },
-                },
-              },
-              image: {
-                fields: ["url", "alternativeText"],
-              },
-              CompanyFacilitiesCard: {
-                populate: {
-                  image: {
-                    fields: ["url", "alternativeText"],
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    },
   });
 
   return await fetchData(url.href);
 }
 
-export async function getSpaceData() {
-  const url = new URL("/api/offices", baseUrl);
 
-  url.search = qs.stringify({
-    populate: {
-      image: {
-        fields: ["url", "alternativeText"],
-      },
-      ameneties: {
-        populate: {
-          amenetyIcon: {
-            fields: ["url", "alternativeText"],
-          },
-        },
-      },
 
-      bookitBtn: {
-        populate: true,
-      },
 
-      SpaceLocation: {
-        populate: true,
-      },
 
-      city: {
-        populate: true,
-      },
-    },
-  });
+////////// HOMEPAGE DATA ///////////
+export async function getHomePageData() {
+  const url = new URL("/api/homepage", baseUrl);
+
+  url.search = qs.stringify(
+
+    {
+      populate: {
+        block: {
+          populate: {
+            HeroSectionBgImg: {
+              fields: ["url", "alternativeText"]
+            },
+            Banner: {
+              populate: {
+                CardImg:{
+                  fields:["url","alternativeText"]
+                },
+                BannerBtn: {
+                  populate: true
+                }
+              }
+            },
+            services: {
+              populate: {
+                Icon: {
+                  fields: ["url", "alternativeText"]
+                },
+              }
+            },
+            AvailableLocations: {
+              populate: {
+                CoverImg: {
+                  fields: ["url", "alternativeText"]
+                },
+              }
+            },
+            workspace_preferences: {
+              populate: {
+                CoverImage: {
+                  fields: ["url", "alternativeText"]
+                },
+              }
+            },
+            ammenities: {
+              populate: {
+                Icon: {
+                  fields: ["url", "alternativeText"]
+                },
+              }
+            },
+            FindPerfectSpaceCard: {
+              populate: {
+                ScheduleTourLink: {
+                  populate: true
+                },
+                FindPerfectSpaceCardIcon: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            brand_collaborations: {
+              populate: {
+                BrandLogo: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            testimonials: {
+              populate: {
+                ReviewersImgae: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            BlogSectionBtn: {
+              populate: true
+            },
+            blogs: {
+              populate: {
+                CoverImage: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            BGImage: {
+              fields: ["url", "alternativeText"]
+            },
+            faqs: {
+              populate: true
+            }
+          }
+        }
+      }
+    }
+  );
 
   return await fetchData(url.href);
 }
+
+
+///////////// ALL LOCATIONS PAGE DATA //////////
+export async function getAllLocationPageData() {
+  const url = new URL("/api/all-location", baseUrl);
+
+  url.search = qs.stringify(
+    {
+      populate: {
+        block: {
+          populate: {
+            BannerBtn: {
+              populate: true
+            },
+            coverImg: {
+              fields: ["url", "alternativeText"]
+            },
+            spaces: {
+              populate: {
+                SpacePreviewImages: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            AvailableLocations: {
+              populate: {
+                CoverImg: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            services: {
+              populate: {
+                Icon: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            ammenities: {
+              populate: {
+                Icon: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            WorkSocialImages: {
+              fields: ["url", "alternativeText"]
+            },
+            JoinInFormSectionCoverImg: {
+              fields: ["url", "alternativeText"]
+            },
+            faqs: {
+              populate: true
+            }
+          }
+        }
+      }
+    }
+
+  );
+
+  return await fetchData(url.href);
+}
+
+
+
+/////////// ABOUT US PAGE DATA //////////
+export async function getAboutUsPageData() {
+  const url = new URL("/api/about-us", baseUrl);
+
+  url.search = qs.stringify(
+
+    {
+      populate: {
+        block: {
+          populate: {
+            BannerBtn: {
+              populate: true
+            },
+            coverImg: {
+              fields: ["url", "alternativeText"]
+            },
+            spaces: {
+              populate: {
+                SpacePreviewImages: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            services: {
+              populate: {
+                Icon: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            ammenities: {
+              populate: {
+                Icon: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            SimpleCardComponent: {
+              populate: {
+                icon: {
+                  fields: ["url", "alternativeText"]
+                }
+              }
+            },
+            WorkSocialImages: {
+              fields: ["url", "alternativeText"]
+            },
+            FindPerfectSpaceCard: {
+              ScheduleTourLink: {
+                populate: true
+              },
+              FindPerfectSpaceCardIcon: {
+                fields: ["url", "alternativeText"]
+              }
+            },
+            JoinInFormSectionCoverImg: {
+              fields: ["url", "alternativeText"]
+            },
+            faqs: {
+              populate: true
+            }
+          }
+        }
+      }
+    }
+
+  );
+
+  return await fetchData(url.href);
+}
+
 
 // export async function getGlobalPageData(){      // header  and footer
 

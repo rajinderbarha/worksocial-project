@@ -1,0 +1,82 @@
+.Workbetter {
+    padding: 161px 16px;
+}
+
+.Workbetter_Icon_boxs {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1150px;
+}
+
+.Workbetter h2 {
+    margin-bottom: 80px;
+}
+
+.Workbetter_boxs {
+    padding: 50px;
+    background-color: #F6F4F2;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Workbetter_boxs img {
+    max-width: 95px;
+
+}
+
+.Workbetter_boxs p {
+    font-family: 'MD IO Trial';
+    font-size: 19.29px;
+    font-weight: 400;
+    line-height: 29.39px;
+    color: #281D18;
+}
+
+@media only screen and (max-width:768px) {
+    .Workbetter {
+        background: transparent;
+    }
+    .Workbetter {
+        padding: 38px  16px 30px 16px;
+    }
+    .Workbetter .col-md-3 {
+        width: 50% !important;
+    }
+    .Workbetter h2 {
+        margin-bottom: 23px;
+    }
+    .teal {
+        background-color: #17CCD4;
+    }
+
+    .orange_1 {
+        background-color: #FF5B00;
+    }
+
+    .tra {
+        background-color: transparent;
+    }
+
+    .brown {
+        background-color: #44322D;
+    }
+
+    .teal p,
+    .orange_1 p,
+    .brown p {
+        color: #F6F4F2;
+    }
+
+    .Workbetter_boxs img {
+        max-width: 35px;
+        height: 35px;
+    }
+    .Workbetter_boxs {
+        padding: 30px 20px;
+    border-radius: 16px;}
+    .Workbetter_Icon_boxs{
+        padding: 0 20px;
+    }
+}
