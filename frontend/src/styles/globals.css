@@ -1,3 +1,43 @@
+@font-face {
+  font-family:  'General Sans';
+  src: url('../assets//fonts/general_sans/GeneralSans-Bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family:  'General Sans';
+  src: url('../assets/fonts/general_sans/GeneralSans-Medium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:  'General Sans';
+  src: url('../assets//fonts/general_sans/GeneralSans-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('../assets/fonts/general_sans/GeneralSans-Semibold.otf');
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: 'MD IO Trial';
+  src: url('../assets/fonts/md_io_trial/ModecoTrial-Bold.otf');
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'MD IO Trial';
+  src: url('../assets/fonts/md_io_trial/ModecoTrial-Regular.otf');
+  font-weight: 400;
+}
+
+
+/* font end */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +46,11 @@
 body{
   background-color: #EAE6DE !important;
   
+}
+
+.navbar-brand img{
+  max-width: 187px;
+  height: 102px;
 }
 .Containers_main {
   width: 100%;
@@ -28,6 +73,7 @@ img {
   font-weight: 400;
   line-height: 78px;
   letter-spacing: -0.02em;
+  font-family:  'General Sans';
 }
 
 .Home h2 {
@@ -35,6 +81,7 @@ img {
   font-weight: 400;
   line-height: 80px;
   letter-spacing: -0.02em;
+  font-family:  'General Sans';
 }
 
 
@@ -42,6 +89,7 @@ img {
 font-size: 28px;
 font-weight: 500;
 line-height: 29px;
+font-family: 'MD IO Trial';
 }
 
 .sub_heading{
@@ -49,26 +97,31 @@ font-size: 24px;
 font-weight: 400;
 line-height: 78px;
 letter-spacing: -0.02em;
+font-family: 'MD IO Trial';
 }
 .Home p {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.02em;
+  font-family:  'General Sans';
 }
 
 .pink{
   background-color: #F2BDEB;
 }
-
+.cream{
+  background-color: #F6F4F2;
+}
 .button_1{
-  padding: 10px 6px 10px 30px;
+  padding: 5px 5px 5px 30px;
   background-color: #FFFFFF;
   border: none;
   border-radius: 20px;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -0.02em;
+  font-family:  'General Sans';
 }
 
 .orange{
@@ -91,6 +144,9 @@ letter-spacing: -0.02em;
 .dark_brown{
   background: #281D18;
 }
+.rounded_border {
+  border-radius: 100px !important;
+}
 @media only screen and (max-width: 991px) {
   .Home h1 {
     font-size: 50px;
@@ -112,18 +168,18 @@ letter-spacing: -0.02em;
       border-radius: 10px;
     }
 }
-@media only screen and (max-width:768px) {
+/* @media only screen and (max-width:768px) {
   .sub_heading{
     font-size: 14px;
     line-height: 11px;
     }
-    .Home h1 {
+     {
+      font-size: 14px;
+      l.Home h1 {
       font-size: 30px;
       line-height: 30px;
     }
-    .Home p {
-      font-size: 14px;
-      line-height: 18px;
+    .Home pine-height: 18px;
     }
     .Home h5{
       font-size: 16px;
@@ -135,5 +191,12 @@ letter-spacing: -0.02em;
         line-height: 34px;
       }
       .slick-track {
-        left: -37px !important;}
-}
+        left: -37px !important;
+       }
+       .slick-slider{
+overflow: hidden;
+       }
+       .rounded_border {
+        border-radius: 64px !important;
+      }
+} */

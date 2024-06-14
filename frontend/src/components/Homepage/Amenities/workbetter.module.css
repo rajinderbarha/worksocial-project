@@ -1,5 +1,7 @@
 .Workbetter {
-    padding: 161px 16px;
+    padding: 130px 16px;
+    background-color: #F2BDEB; /* Background color similar to the provided image */
+    text-align: center; /* Center align text */
 }
 
 .Workbetter_Icon_boxs {
@@ -10,73 +12,63 @@
 
 .Workbetter h2 {
     margin-bottom: 80px;
+    font-size: 2rem; /* Adjust font size as needed */
+    color: #000; /* Black text color */
 }
 
 .Workbetter_boxs {
-    padding: 50px;
-    background-color: #F6F4F2;
-    border-radius: 30px;
+    padding: 40px 20px;
+    background-color: #fff; /* White background for each item */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    height: 250px; /* Fixed height for uniformity */
 }
 
 .Workbetter_boxs img {
-    max-width: 95px;
-
+    width: 100px; /* Adjust width to fit within the shape */
+    height: 100px; /* Adjust height to fit within the shape */
+    margin-bottom: 10px; /* Space between image and text */
 }
 
 .Workbetter_boxs p {
-    font-family: 'MD IO Trial';
-    font-size: 19.29px;
-    font-weight: 400;
-    line-height: 29.39px;
-    color: #281D18;
+    margin: 0;
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #333; /* Dark grey text color */
+    
 }
 
-@media only screen and (max-width:768px) {
-    .Workbetter {
-        background: transparent;
+.Workbetter_boxs_P{
+    max-width: 106px;
+}
+@media only screen and (max-width: 1200px) {
+    .Workbetter_boxs {
+        height: auto; /* Adjust height for medium screens */
     }
+}
+
+@media only screen and (max-width: 768px) {
     .Workbetter {
-        padding: 38px  16px 30px 16px;
-    }
-    .Workbetter .col-md-3 {
-        width: 50% !important;
+        padding: 0px 16px 129px 16px;
     }
     .Workbetter h2 {
         margin-bottom: 23px;
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
-    .teal {
-        background-color: #17CCD4;
-    }
-
-    .orange_1 {
-        background-color: #FF5B00;
-    }
-
-    .tra {
-        background-color: transparent;
-    }
-
-    .brown {
-        background-color: #44322D;
-    }
-
-    .teal p,
-    .orange_1 p,
-    .brown p {
-        color: #F6F4F2;
-    }
-
-    .Workbetter_boxs img {
-        max-width: 35px;
-        height: 35px;
+    .Workbetter_Icon_boxs {
+        padding: 0 20px;
     }
     .Workbetter_boxs {
         padding: 30px 20px;
-    border-radius: 16px;}
-    .Workbetter_Icon_boxs{
-        padding: 0 20px;
+        border-radius: 30px;
+        height: auto; /* Adjust height for smaller screens */
+    }
+    .Workbetter_boxs img {
+        max-width: 35px;
+        height: 35px;
     }
 }

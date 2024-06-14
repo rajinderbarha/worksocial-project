@@ -1,39 +1,75 @@
-.Brandslogos{
+/* CSS for the Brandslogos component */
+.Brandslogos {
     padding: 130px 16px;
+    background-color: #f2d2e7; /* Background color similar to the provided image */
+    text-align: center; /* Center align text */
 }
 
-.Brandslogos h2{
-max-width: 719px;
+.Brandslogos h2 {
+    max-width: 719px;
+    margin: 0 auto; /* Center the heading */
+    font-size: 2rem; /* Adjust font size as needed */
+    color: #000; /* Black text color */
 }
-.Brandslogos p{
+
+.Brandslogos p {
     max-width: 670px;
-    margin: 40px 0 65px 0 ;
+    margin: 40px auto 65px auto; /* Center the paragraph */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: #333; /* Dark grey text color */
 }
-.Brandslogos_box{
+
+.Brandslogos_box {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Responsive grid */
     gap: 20px;
 }
+
+.Brandslogos_box div {
+    background-color: #fff; /* White background for each item */
+    border-radius: 50px; /* Rounded corners */
+    padding: 40px 20px; /* Padding inside each item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    height: 200px; /* Fixed height for uniformity */
+}
+
+.Brandslogos_box img {
+    width: 50px; /* Adjust width to fit within the shape */
+    height: 50px; /* Adjust height to fit within the shape */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.Brandslogos_box p {
+    margin: 0;
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #333; /* Dark grey text color */
+}
+
 @media only screen and (max-width: 1200px) {
-    .Brandslogos_box{
-        grid-template-columns: auto auto auto auto ;
+    .Brandslogos_box {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Adjust columns for medium screens */
     }
 }
+
 @media only screen and (max-width: 768px) {
-    .Brandslogos{
-        padding:0px 16px 129px 16px;
+    .Brandslogos {
+        padding: 0px 16px 129px 16px;
     }
-    .Brandslogos p{
+    .Brandslogos p {
         max-width: 670px;
-        margin: 19px 0 29px 0 ;
+        margin: 19px auto 29px auto; /* Center the paragraph */
     }
-    .Brandslogos_box{
-        grid-template-columns: auto auto;
+    .Brandslogos_box {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Adjust columns for small screens */
     }
-    .Brandslogos img{
-        height: 97px;
+    .Brandslogos img {
+        height: 50px; /* Ensure images fit within smaller shapes */
     }
-    .Brandslogos{
+    .Brandslogos {
         text-align: center;
     }
 }
